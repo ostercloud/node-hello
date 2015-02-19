@@ -9,9 +9,11 @@ var app = express();
 app.get('/', function (req, res) {
   res.send('Hello world\n');
 });
+
 app.get('/page1', function (req, res) {
   res.send('this is page 1\n');
 });
+
 app.get('/page2', function (req, res) {
   res.send('this is page 2\n');
 });
