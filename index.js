@@ -11,11 +11,11 @@ app.get('/', function (req, res) {
 });
 
 app.get('/page1', function (req, res) {
-  res.send('this is page 1\n');
+  res.send('this is page 1');
 });
 
 app.get('/page2', function (req, res) {
-  res.send('this is page 2\n');
+  res.send('this is page 2');
 });
 
 app.listen(PORT);
