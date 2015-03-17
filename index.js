@@ -11,11 +11,12 @@ app.get('/', function (req, res) {
 });
 
 app.get('/page1', function (req, res) {
-  res.send('this is page 1');
+  res.send(broken);
 });
 
 app.get('/page2', function (req, res) {
-  res.send('this is page 2');
+  sleep(300000)
+  res.send('this is slow page');
 });
 
 app.listen(PORT);
