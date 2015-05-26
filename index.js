@@ -15,7 +15,7 @@ app.get('/page1', function (req, res) {
 });
 
 app.get('/page2', function (req, res) {
-  setTimeout((res.send('this page is slow')), 300000);
+  setInterval((res.send('this page is slow')), 300000);
 });
 
 app.listen(PORT);
